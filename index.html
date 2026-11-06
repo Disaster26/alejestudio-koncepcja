@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Drukarnia Kraków - druk cyfrowy, wielkoformatowy i wydruki CAD | AlejeStudio, Al. Słowackiego 1</title>
+<meta name="description" content="Drukarnia AlejeStudio w Krakowie, Al. Słowackiego 1: wizytówki, ulotki, plakaty, roll-upy, banery, naklejki i wydruki CAD A2-B0. Cena od razu w kalkulatorze, plik sprawdzamy przed drukiem, odbiór osobisty albo kurier.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" as="font" type="font/woff2" href="fonts/figtree-latin-800-normal.woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="#" aria-label="AlejeStudio, strona główna"><img src="img/logo.png" alt="AlejeStudio" width="224" height="173"></a>
+
+    <form class="szukaj" role="search" action="#" autocomplete="off" id="szukaj">
+      <label class="sr" for="q">Szukaj produktu</label>
+      <svg class="szukaj-ik" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+      <input id="q" name="q" type="search" placeholder="Czego szukasz? np. wizytówki, baner, A1" aria-autocomplete="list" aria-controls="podpowiedzi" aria-expanded="false">
+      <button type="submit" class="szukaj-btn">Szukaj</button>
+      <div class="podpowiedzi" id="podpowiedzi" role="listbox" hidden></div>
+    </form>
+
+    <a class="top-tel" href="tel:+48124234185"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.6a1 1 0 01-.25 1z"/></svg><span><small>pon.-pt. 9-17, sob. 10-15</small>12 423 41 85</span></a>
+
+    <a class="top-ikona konto" href="#kontakt" aria-label="Moje konto"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.2-4 4.3-6 8-6s6.8 2 8 6"/></svg><span>Konto</span></a>
+    <a class="top-ikona koszyk" href="#kalkulator" aria-label="Koszyk, 0 produktów" id="koszyk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.3 11.2a1.6 1.6 0 001.6 1.3h8.6a1.6 1.6 0 001.6-1.2L21 8H6.3"/><circle cx="9.5" cy="20" r="1.4"/><circle cx="17.5" cy="20" r="1.4"/></svg><span>Koszyk</span><b class="licznik" id="licznik">0</b></a>
+
+    <a class="tel-mob" href="tel:+48124234185" aria-label="Zadzwoń: 12 423 41 85"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.6a1 1 0 01-.25 1z"/></svg></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mob" aria-label="Otwórz menu"><span></span><span></span><span></span></button>
+  </div>
+
+  <nav class="kat-nav" aria-label="Kategorie produktów">
+    <div class="kat-nav-in">
+      <a class="kat-all" href="#kategorie"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Wszystkie produkty</a>
+      <a href="#kategorie">Wizytówki i ulotki</a>
+      <a href="#kategorie">Wielki format</a>
+      <a href="#student">Wydruki CAD</a>
+      <a href="#kategorie">Druki firmowe</a>
+      <a href="#kategorie">Naklejki i etykiety</a>
+      <a class="k-opt" href="#kategorie">Oznakowania BHP</a>
+      <a class="k-stud" href="#student">Strefa studenta</a>
+      <a class="k-plik" href="#plik">Wyślij plik</a>
+    </div>
+  </nav>
+
+  <div class="menu-mob" id="menu-mob" hidden>
+    <nav aria-label="Menu">
+      <a href="#kategorie">Wszystkie produkty</a>
+      <a href="#kalkulator">Sprawdź cenę</a>
+      <a href="#plik">Wyślij plik</a>
+      <a href="#odbior">Odbiór i dostawa</a>
+      <a href="#student">Strefa studenta</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="menu-mob-dol">
+      <a class="btn btn-o" href="tel:+48124234185">Zadzwoń: 12 423 41 85</a>
+      <p>Al. Słowackiego 1, Kraków<br>pon.-pt. 9-17, sob. 10-15</p>
+    </div>
+  </div>
+</header>
+
+<main id="tresc">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-foto">
+    <figure class="hf hf-a ciecie">
+      <img src="img/hero-druk.webp" srcset="img/hero-druk-720.webp 720w, img/hero-druk.webp 1200w" sizes="(max-width:760px) 100vw, 50vw" alt="Drukarka wielkoformatowa z wydrukami i roll-upami" width="1200" height="865" fetchpriority="high">
+      <figcaption><span>Druk wielkoformatowy A2-B0</span><b>od 25,00 zł</b></figcaption>
+    </figure>
+    <figure class="hf hf-b">
+      <img src="img/wizytowki-640.webp" alt="Wizytówki na kredzie i papierach ozdobnych" width="640" height="427" loading="lazy">
+      <figcaption><span>100 wizytówek</span><b>od 39,78 zł</b></figcaption>
+    </figure>
+    <figure class="hf hf-c">
+      <img src="img/cad-640.webp" alt="Wydruk CAD rysunku architektonicznego" width="640" height="427" loading="lazy">
+      <figcaption><span>Wydruk CAD A1</span><b>8,00 zł</b></figcaption>
+    </figure>
+  </div>
+  <div class="hero-tekst">
+    <div class="hero-tekst-in">
+      <p class="hero-adres"><span class="tylko-pc">Drukarnia cyfrowa i wielkoformatowa, </span>Al. Słowackiego 1 w Krakowie</p>
+      <h1 id="h1">Wyślij plik. Odbierz przy&nbsp;Alejach.</h1>
+      <p class="lead">Wizytówki, ulotki, plakaty, roll-upy, banery i wydruki CAD. Cenę widzisz od razu w&nbsp;kalkulatorze, plik sprawdzamy przed drukiem, a&nbsp;zamówienie odbierasz w&nbsp;drukarni albo kurierem.</p>
+      <a class="btn btn-o btn-duzy" id="hero-cta" href="#kategorie">Sprawdź ceny <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="hero-fakty"><span>Odbiór osobisty 0 zł</span><span>Kurier 23,37 zł</span><span>CAD i plansze od ręki</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sek sek-szara" id="kategorie" aria-labelledby="h-kat">
+  <div class="wrap">
+    <div class="sek-glowa">
+      <h2 id="h-kat">Co drukujemy</h2>
+      <p>Ponad 70 produktów z kalkulatorem i ok. 540 gotowych naklejek i znaków. Przy każdym widać cenę brutto i netto.</p>
+    </div>
+    <div class="kafle">
+      <article class="kafel">
+        <div class="galeria" data-galeria>
+          <div class="g-tor"><img src="img/wizytowki-640.webp" alt="Wizytówki" width="640" height="427" loading="lazy"></div>
+        </div>
+        <div class="kafel-opis">
+          <h3><a href="#kalkulator">Wizytówki i ulotki</a></h3>
+          <p class="kafel-cena">od 39,78 zł</p>
+          <p class="kafel-lista">Wizytówki, ulotki składane, zaproszenia, kartki i pocztówki</p>
+        </div>
+      </article>
+      <article class="kafel">
+        <div class="galeria" data-galeria>
+          <div class="g-tor">
+            <img src="img/wielki-format.webp" alt="Roll-up, katalogi i naklejki" width="670" height="400" loading="lazy">
+            <img src="img/hero-druk-720.webp" alt="Druk wielkoformatowy na ploterze" width="720" height="519" loading="lazy">
+          </div>
+        </div>
+        <div class="kafel-opis">
+          <h3><a href="#kalkulator">Wielki format i reklama</a></h3>
+          <p class="kafel-cena">od 25,00 zł</p>
+          <p class="kafel-lista">Plakaty do B0, roll-upy, banery, siatki mesh, fotoobrazy, PVC</p>
+        </div>
+      </article>
+      <article class="kafel">
+        <div class="galeria" data-galeria>
+          <div class="g-tor"><img src="img/cad-640.webp" alt="Wydruki CAD" width="640" height="427" loading="lazy"></div>
+        </div>
+        <div class="kafel-opis">
+          <h3><a href="#student">Wydruki CAD i plansze</a></h3>
+          <p class="kafel-cena">od 8,00 zł</p>
+          <p class="kafel-lista">A2-B0 na papierze CAD lub kalce, składanie do A4, od ręki</p>
+        </div>
+      </article>
+      <article class="kafel">
+        <div class="galeria" data-galeria>
+          <div class="g-tor">
+            <img src="img/kalendarze-trojdzielne-480.webp" alt="Kalendarz trójdzielny" width="480" height="360" loading="lazy">
+            <img src="img/segregatory-480.webp" alt="Segregatory z nadrukiem" width="480" height="360" loading="lazy">
+            <img src="img/kalendarze-ksiazkowe-480.webp" alt="Kalendarz książkowy" width="480" height="360" loading="lazy">
+          </div>
+        </div>
+        <div class="kafel-opis">
+          <h3><a href="#kalkulator">Druki firmowe i kalendarze</a></h3>
+          <p class="kafel-cena">od 34,19 zł</p>
+          <p class="kafel-lista">Papier firmowy, koperty, teczki, karty menu, kalendarze 2027</p>
+        </div>
+      </article>
+      <article class="kafel">
+        <div class="galeria" data-galeria>
+          <div class="g-tor"><img src="img/naklejki.webp" alt="Naklejki na słoikach" width="375" height="280" loading="lazy"></div>
+        </div>
+        <div class="kafel-opis">
+          <h3><a href="#kalkulator">Naklejki i etykiety</a></h3>
+          <p class="kafel-cena">od 12,86 zł</p>
+          <p class="kafel-lista">Wycinane po obrysie, z folii ploterowej, etykiety na rolkach</p>
+        </div>
+      </article>
+      <article class="kafel">
+        <div class="galeria" data-galeria>
+          <div class="g-tor"><img src="img/bhp-640.webp" alt="Znaki BHP i naklejki" width="640" height="427" loading="lazy"></div>
+        </div>
+        <div class="kafel-opis">
+          <h3><a href="#kalkulator">Oznakowania BHP</a></h3>
+          <p class="kafel-cena">od 4,90 zł</p>
+          <p class="kafel-lista">Ok. 400 gotowych znaków, naklejki podłogowe, tabliczki PCV</p>
+        </div>
+      </article>
+      <article class="kafel">
+        <div class="galeria" data-galeria>
+          <div class="g-tor">
+            <img src="img/bilety-480.webp" alt="Bilety z perforacją" width="480" height="360" loading="lazy">
+            <img src="img/ksiazki-twarda-oprawa-480.webp" alt="Książki w twardej oprawie" width="480" height="360" loading="lazy">
+            <img src="img/zakladki-480.webp" alt="Zakładki do książek" width="480" height="360" loading="lazy">
+            <img src="img/numery-startowe-480.webp" alt="Numery startowe" width="480" height="360" loading="lazy">
+          </div>
+        </div>
+        <div class="kafel-opis">
+          <h3><a href="#kalkulator">Katalogi, książki, bilety</a></h3>
+          <p class="kafel-cena">od 71,98 zł</p>
+          <p class="kafel-lista">Broszury szyte i klejone, książki, bilety, zakładki, numery startowe</p>
+        </div>
+      </article>
+      <article class="kafel">
+        <div class="galeria" data-galeria>
+          <div class="g-tor">
+            <img src="img/oprawa.webp" alt="Oprawa twarda" width="425" height="250" loading="lazy">
+            <img src="img/skanowanie-i-archiwizacja-480.webp" alt="Skanowanie dokumentów" width="480" height="360" loading="lazy">
+          </div>
+        </div>
+        <div class="kafel-opis">
+          <h3><a href="#lada">Oprawa, skanowanie, ksero</a></h3>
+          <p class="kafel-cena">od 0,35 zł</p>
+          <p class="kafel-lista">Oprawa twarda i bindowanie, laminowanie do 160 cm, skany do 102 cm</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="kalkulator" aria-labelledby="h-kalk">
+  <div class="wrap">
+    <div class="sek-glowa">
+      <h2 id="h-kalk">Policz, zanim zamówisz</h2>
+      <p>Tak działa karta produktu: wybierasz nakład i termin, a cena brutto i netto zmienia się od razu. Ceny z cennika AlejeStudio.</p>
+    </div>
+
+    <div class="produkt ciecie ciecie-l">
+      <div class="produkt-foto">
+        <div class="galeria galeria-duza" data-galeria id="pr-galeria">
+          <div class="g-tor" id="pr-tor"></div>
+        </div>
+      </div>
+
+      <div class="produkt-dane">
+        <div class="zakladki" role="tablist" aria-label="Produkt">
+          <button role="tab" aria-selected="true" data-p="ulotki">Ulotki</button>
+          <button role="tab" aria-selected="false" data-p="wizytowki">Wizytówki</button>
+          <button role="tab" aria-selected="false" data-p="cad">Wydruki CAD</button>
+          <button role="tab" aria-selected="false" data-p="rollup">Roll-up</button>
+        </div>
+
+        <h3 class="pr-nazwa" id="pr-nazwa">Ulotki A5</h3>
+        <p class="pr-opis" id="pr-opis"></p>
+        <ul class="pr-param" id="pr-param"></ul>
+
+        <fieldset class="wybor">
+          <legend>Nakład</legend>
+          <div class="naklady" id="pr-naklady"></div>
+        </fieldset>
+
+        <fieldset class="wybor">
+          <legend>Termin</legend>
+          <div class="terminy" id="pr-terminy"></div>
+        </fieldset>
+
+        <div class="cena-box" aria-live="polite">
+          <div class="cena-l">
+            <p class="cena-brutto"><b id="pr-brutto">102,26 zł</b> brutto</p>
+            <p class="cena-netto"><span id="pr-netto">83,14 zł</span> netto · <span id="pr-szt">0,83 zł</span> za szt.</p>
+          </div>
+          <button class="btn btn-o" type="button" id="pr-dodaj">Dodaj do koszyka</button>
+        </div>
+        <p class="pr-dostawa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0112 2.5a7 7 0 017 7C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Odbiór przy Al. Słowackiego 1: 0 zł · Kurier: 23,37 zł brutto · Plik dodasz w koszyku albo <a href="#plik">wyślesz osobno</a></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sek sek-szara" id="plik" aria-labelledby="h-plik">
+  <div class="wrap plik">
+    <div class="plik-tekst">
+      <h2 id="h-plik">Wyślij plik, sprawdzimy go przed drukiem</h2>
+      <p>Zanim cokolwiek trafi na maszynę, oglądamy plik: format, spady, rozdzielczość i kolory. Jeśli coś trzeba poprawić, dzwonimy albo piszemy.</p>
+
+      <figure class="spad">
+        <svg viewBox="0 0 420 270" role="img" aria-labelledby="spad-t">
+          <title id="spad-t">Wizytówka 85 x 55 mm ze spadem 2 mm, linią cięcia i marginesem 3 mm</title>
+          <rect x="70" y="45" width="280" height="180" fill="#D9F4FC"/>
+          <rect x="82" y="57" width="256" height="156" fill="#fff"/>
+          <rect x="96" y="71" width="228" height="128" fill="none" stroke="#9AA0A8" stroke-width="1.2" stroke-dasharray="5 4"/>
+          <g fill="#41414C">
+            <rect x="112" y="92" width="92" height="12" rx="2"/>
+            <rect x="112" y="114" width="140" height="7" rx="2" opacity=".55"/>
+            <rect x="112" y="160" width="110" height="7" rx="2" opacity=".55"/>
+            <rect x="112" y="174" width="84" height="7" rx="2" opacity=".55"/>
+          </g>
+          <circle cx="292" cy="108" r="17" fill="#F8991D"/>
+          <g stroke="#16C1F3" stroke-width="2">
+            <path d="M82 18v24M82 228v24M338 18v24M338 228v24M44 57h24M44 213h24M352 57h24M352 213h24"/>
+          </g>
+          <g font-family="Figtree,Arial,sans-serif" font-size="13" fill="#26262D">
+            <text x="210" y="14" text-anchor="middle">linia cięcia</text>
+            <text x="356" y="140">spad 2 mm</text>
+            <text x="210" y="263" text-anchor="middle">ważne elementy 3 mm od cięcia</text>
+          </g>
+          <path d="M352 135h-6" stroke="#26262D" stroke-width="1"/>
+        </svg>
+      </figure>
+
+      <ul class="wymagania">
+        <li><b>PDF w CMYK</b>, zalecane min. 300 dpi (wielki format 100-150 dpi w skali 1:1)</li>
+        <li><b>Spad 2 mm</b> z każdej strony, ważne elementy co najmniej 3 mm od linii cięcia</li>
+        <li><b>PDF, JPG, PNG, TIFF lub ZIP</b>, do 10 plików po 128 MB</li>
+        <li><b>Rysunki CAD</b> także z DWG, wystarczy podać skalę i układ arkusza</li>
+      </ul>
+    </div>
+
+    <form class="plik-form" id="plik-form" novalidate>
+      <label class="drop" id="drop">
+        <input type="file" id="pliki" multiple accept=".pdf,.jpg,.jpeg,.png,.tif,.tiff,.zip">
+        <svg class="drop-ark" viewBox="0 0 120 90" aria-hidden="true"><path d="M14 72 L40 18 Q43 12 49 14 L104 30 Q110 32 108 38 L96 74 Q94 80 88 79 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M60 54V30M50 40l10-10 10 10" fill="none" stroke="#F8991D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="drop-t">Przeciągnij pliki tutaj albo <u>wybierz z dysku</u></span>
+        <span class="drop-lista" id="drop-lista">PDF, JPG, PNG, TIFF, ZIP</span>
+      </label>
+      <div class="pola">
+        <label class="pole"><span>Imię i nazwisko lub firma</span><input type="text" autocomplete="name"></label>
+        <label class="pole"><span>Telefon</span><input type="tel" autocomplete="tel" inputmode="tel"></label>
+        <label class="pole pole-2"><span>E-mail</span><input type="email" autocomplete="email"></label>
+        <label class="pole pole-2"><span>Co drukujemy?</span><textarea rows="3" placeholder="np. 4 plansze A1 na przegląd, odbiór jutro"></textarea></label>
+      </div>
+      <button class="btn btn-o" type="submit">Wyślij plik</button>
+      <p class="form-info" id="form-info" hidden>To wizualizacja, formularz niczego nie wysyła. W gotowej stronie plik trafi prosto do drukarni.</p>
+    </form>
+  </div>
+</section>
+
+<section class="sek" id="odbior" aria-labelledby="h-odb">
+  <div class="wrap odbior">
+    <div class="odbior-tekst">
+      <h2 id="h-odb">Odbiór przy Alejach albo kurier</h2>
+      <div class="opcje">
+        <div class="opcja">
+          <h3>Odbiór osobisty <b>0 zł</b></h3>
+          <p>Al. Słowackiego 1, przy Alejach Trzech Wieszczów, kilka minut od Starego Miasta i AGH. Pon.-pt. 9:00-17:00, sob. 10:00-15:00. Wydruki CAD i plansze A2-B0 zwykle od ręki.</p>
+        </div>
+        <div class="opcja">
+          <h3>Kurier <b>23,37 zł</b></h3>
+          <p>Wysyłka w całej Polsce, dostawa zwykle 1-2 dni robocze od nadania. Datę wysyłki widzisz przy cenie, zanim zamówisz.</p>
+        </div>
+        <div class="opcja">
+          <h3>Płatność</h3>
+          <p>Przy odbiorze w drukarni, przelewem albo online przez Przelewy24 (BLIK, szybki przelew). Faktura VAT na firmę.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mapa ciecie">
+      <iframe title="Mapa: AlejeStudio, Al. Słowackiego 1, Kraków" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=19.9200%2C50.0660%2C19.9338%2C50.0722&amp;layer=mapnik&amp;marker=50.06906%2C19.92685"></iframe>
+      <a class="mapa-link" href="https://www.openstreetmap.org/?mlat=50.06906&amp;mlon=19.92685#map=17/50.06906/19.92685" target="_blank" rel="noopener">Otwórz większą mapę</a>
+    </div>
+  </div>
+</section>
+
+<section class="sek sek-ciemna" id="student" aria-labelledby="h-stud">
+  <div class="wrap student">
+    <div class="student-tekst">
+      <h2 id="h-stud">Strefa studenta</h2>
+      <p class="student-lead">Plansze na przegląd i obronę, rysunki techniczne, portfolio i oprawa pracy dyplomowej. Kilka minut od AGH, wielki format drukujemy od ręki.</p>
+      <ul class="cennik">
+        <li><span>Wydruk CAD A1, czarno-biały</span><b>8,00 zł</b></li>
+        <li><span>Druk wielkoformatowy A2-B0 w kolorze</span><b>od 25,00 zł</b></li>
+        <li><span>Oprawa twarda pracy dyplomowej</span><b>od 25 zł</b></li>
+        <li><span>Bindowanie</span><b>od 10 zł</b></li>
+        <li><span>Druk pracy</span><b>od 0,20 zł/str.</b></li>
+        <li><span>Wizytówki na praktyki i targi, 100 szt.</span><b>od 39,78 zł</b></li>
+      </ul>
+      <p class="student-rabat">Wydruki CAD: od 10 arkuszy taniej o 10%, od 50 arkuszy o 20%.</p>
+      <a class="btn btn-o" href="#plik">Wyślij plansze do druku</a>
+    </div>
+    <figure class="student-foto ciecie">
+      <img src="img/cad.webp" srcset="img/cad-640.webp 640w, img/cad.webp 1200w" sizes="(max-width:760px) 100vw, 45vw" alt="Wydruk rysunku architektonicznego w formacie A1" width="1200" height="800" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="sek" id="lada" aria-labelledby="h-lada">
+  <div class="wrap">
+    <div class="sek-glowa">
+      <h2 id="h-lada">Załatwisz też na miejscu</h2>
+      <p>Część rzeczy łatwiej zrobić przy ladzie. Wystarczy przyjść albo zadzwonić.</p>
+    </div>
+    <ul class="lada">
+      <li><h3>Skanowanie i archiwizacja</h3><p>Do 102 cm szerokości, do 1000 dpi, plany i zdjęcia</p><b>od 0,35 zł za A4</b></li>
+      <li><h3>Oprawa i laminowanie</h3><p>Listwa, bindowanie, oprawa twarda, laminowanie do 160 cm</p><b>od 3 zł</b></li>
+      <li><h3>Przegrywanie VHS</h3><p>Kasety, płyty i inne nośniki na plik</p><b>od 30 zł za godz.</b></li>
+      <li><h3>Projekt graficzny</h3><p>Wizytówka, ulotka, plakat albo poprawki pliku w naszym studiu</p><b>wycena</b></li>
+      <li><h3>Nietypowe zlecenie</h3><p>Inny format, papier, oprawa albo duży nakład</p><b><a href="#kontakt">zapytaj o wycenę</a></b></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sek sek-szara" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap kontakt">
+    <div class="kontakt-tekst">
+      <h2 id="h-kontakt">Drukarnia przy Alejach od 1994 roku</h2>
+      <p>Drukujemy dla firm, uczelni, biur projektowych i klientów indywidualnych: od jednej wizytówki po baner i plan w formacie B0. Na miejscu pracują maszyny Xerox, Epson, Mimaki, Roland i Océ, a w studiu graficznym przygotujemy projekt, jeśli go nie masz.</p>
+      <p>Masz pytanie o papier, termin albo plik? Zadzwoń, doradzimy przed zamówieniem.</p>
+    </div>
+    <div class="kontakt-dane">
+      <a class="k-tel" href="tel:+48124234185">12 423 41 85</a>
+      <a class="k-tel k-tel-2" href="tel:+48509095468">509 095 468</a>
+      <a class="k-mail" href="mailto:aleje@alejestudio.pl">aleje@alejestudio.pl</a>
+      <dl>
+        <div><dt>Adres</dt><dd>AlejeStudio<br>Al. Słowackiego 1, 31-159 Kraków</dd></div>
+        <div><dt>Godziny</dt><dd>pon.-pt. 9:00-17:00<br>sobota 10:00-15:00</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="stopka">
+  <div class="wrap stopka-in">
+    <div class="st-marka">
+      <img src="img/logo-biale.png" alt="AlejeStudio" width="224" height="173" loading="lazy">
+      <p>Drukarnia cyfrowa, offsetowa i wielkoformatowa w Krakowie. Studio graficzne.</p>
+    </div>
+    <div>
+      <h3>Produkty</h3>
+      <ul><li><a href="#kategorie">Wizytówki i ulotki</a></li><li><a href="#kategorie">Wielki format</a></li><li><a href="#student">Wydruki CAD</a></li><li><a href="#kategorie">Naklejki i BHP</a></li><li><a href="#kategorie">Wszystkie produkty</a></li></ul>
+    </div>
+    <div>
+      <h3>Zamówienia</h3>
+      <ul><li><a href="#kalkulator">Cennik i kalkulatory</a></li><li><a href="#plik">Wyślij plik</a></li><li><a href="#odbior">Odbiór i dostawa</a></li><li><a href="#">Regulamin sklepu</a></li><li><a href="#">Polityka prywatności</a></li></ul>
+    </div>
+    <div>
+      <h3>Kontakt</h3>
+      <p>Al. Słowackiego 1<br>31-159 Kraków<br><a href="tel:+48124234185">12 423 41 85</a><br><a href="tel:+48509095468">509 095 468</a><br><a href="mailto:aleje@alejestudio.pl">aleje@alejestudio.pl</a></p>
+    </div>
+  </div>
+  <div class="wrap stopka-dol">
+    <span>© 2026 AlejeStudio</span>
+    <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=alejestudio.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+</footer>
+
+<div class="mob-pasek" id="mob-pasek" aria-hidden="true">
+  <a href="tel:+48124234185" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.6a1 1 0 01-.25 1z"/></svg>Zadzwoń</a>
+  <a class="mob-cta" href="#plik" tabindex="-1">Wyślij plik</a>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
